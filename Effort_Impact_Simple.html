@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Effort–Impact Matrix Worksheet</title>
+<style>
+  :root { --ink:#111; --muted:#666; --line:#ddd; --accent:#276ef1; --bg:#fff; }
+  * { box-sizing:border-box; }
+  body { font-family:Inter,Segoe UI,Arial,sans-serif; color:var(--ink); background:var(--bg); margin:0; padding:16px; }
+  h1 { font-size:20px; margin:0 0 8px; }
+  h2 { font-size:14px; margin:16px 0 8px; }
+  label { font-size:12px; color:var(--muted); }
+  input, select, textarea { width:100%; padding:8px; border:1px solid var(--line); border-radius:6px; font-size:12px; }
+  textarea { min-height:64px; resize:vertical; }
+  .row { display:flex; gap:12px; flex-wrap:wrap; }
+  .col { flex:1 1 220px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:12px; margin-bottom:12px; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th, td { border:1px solid var(--line); padding:6px; vertical-align:top; }
+  th { background:#f7f7f8; text-align:left; }
+  .grid-wrap { height:360px; border:1px solid var(--line); border-radius:10px; padding:8px; }
+  .grid { position:relative; width:100%; height:100%; background:
+      linear-gradient(var(--line),var(--line)) 50% 0/1px 100% no-repeat,
+      linear-gradient(var(--line),var(--line)) 0 50%/100% 1px no-repeat; }
+  .grid .axis { position:absolute; font-size:11px; color:var(--muted); }
+  .axis.xlow { left:8px; bottom:4px; }
+  .axis.xhigh { right:8px; bottom:4px; }
+  .axis.ylow { left:8px; bottom:8px; transform:rotate(-90deg); transform-origin:left bottom; }
+  .axis.yhigh { left:8px; top:8px; }
+  .legend { font-size:11px; color:var(--muted); display:flex; gap:12px; flex-wrap:wrap; margin-top:6px; }
+  .legend span::before { content:""; display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; background:var(--accent); }
+  .small { font-size:11px; color:var(--muted); }
+  @media print {
+    body { padding:12mm; }
+    .no-print { display:none !important; }
+  }
+</style>
+</head>
+<body>
+  <h1>Effort–Impact Matrix Worksheet</h1>
+  <div class="card">
+    <div class="row">
+      <div class="col"><label>Name</label><input type="text" name="name"></div>
+      <div class="col"><label>Date</label><input type="date" name="date"></div>
+      <div class="col">
+        <label>Pathway focus</label>
+        <select name="pathway">
+          <option value="">Select</option>
+          <option>People</option>
+          <option>Program</option>
+          <option>Faith</option>
+          <option>Funds</option>
+        </select>
+      </div>
+    </div>
+    <label>12–24 month vision (one sentence)</label>
+    <textarea name="vision" placeholder="State the intended outcome for people/partners."></textarea>
+  </div>
+
+  <h2>1) Candidate actions (from Five Bold Steps and Start items)</h2>
+  <div class="card">
+    <p class="small">List 6–10 actions. Keep verb-first and outcome-focused.</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:40px;">ID</th>
+          <th>Action (verb + outcome)</th>
+          <th style="width:110px;">Source</th>
+          <th>Notes (data/dependencies)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Repeat rows A1–A10 -->
+        <tr><td>A1</td><td><input name="action_A1"></td><td>
+          <select name="source_A1"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A1"></td></tr>
+        <tr><td>A2</td><td><input name="action_A2"></td><td>
+          <select name="source_A2"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A2"></td></tr>
+        <tr><td>A3</td><td><input name="action_A3"></td><td>
+          <select name="source_A3"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A3"></td></tr>
+        <tr><td>A4</td><td><input name="action_A4"></td><td>
+          <select name="source_A4"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A4"></td></tr>
+        <tr><td>A5</td><td><input name="action_A5"></td><td>
+          <select name="source_A5"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A5"></td></tr>
+        <tr><td>A6</td><td><input name="action_A6"></td><td>
+          <select name="source_A6"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A6"></td></tr>
+        <tr><td>A7</td><td><input name="action_A7"></td><td>
+          <select name="source_A7"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A7"></td></tr>
+        <tr><td>A8</td><td><input name="action_A8"></td><td>
+          <select name="source_A8"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A8"></td></tr>
+        <tr><td>A9</td><td><input name="action_A9"></td><td>
+          <select name="source_A9"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A9"></td></tr>
+        <tr><td>A10</td><td><input name="action_A10"></td><td>
+          <select name="source_A10"><option></option><option>Five Bold Steps</option><option>Start</option></select>
+        </td><td><input name="notes_A10"></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>2) Score Impact and Effort (1–5)</h2>
+  <div class="card">
+    <p class="small">Impact: contribution to outcomes within 12–24 months; Effort: time, cost, coordination, risk.</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:40px;">ID</th>
+          <th style="width:90px;">Impact (1–5)</th>
+          <th style="width:90px;">Effort (1–5)</th>
+          <th style="width:140px;">Momentum (unlocks others?)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Score rows for A1–A10 -->
+        <tr><td>A1</td><td><input name="impact_A1" type="number" min="1" max="5"></td><td><input name="effort_A1" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A1"> Yes</td></tr>
+        <tr><td>A2</td><td><input name="impact_A2" type="number" min="1" max="5"></td><td><input name="effort_A2" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A2"> Yes</td></tr>
+        <tr><td>A3</td><td><input name="impact_A3" type="number" min="1" max="5"></td><td><input name="effort_A3" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A3"> Yes</td></tr>
+        <tr><td>A4</td><td><input name="impact_A4" type="number" min="1" max="5"></td><td><input name="effort_A4" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A4"> Yes</td></tr>
+        <tr><td>A5</td><td><input name="impact_A5" type="number" min="1" max="5"></td><td><input name="effort_A5" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A5"> Yes</td></tr>
+        <tr><td>A6</td><td><input name="impact_A6" type="number" min="1" max="5"></td><td><input name="effort_A6" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A6"> Yes</td></tr>
+        <tr><td>A7</td><td><input name="impact_A7" type="number" min="1" max="5"></td><td><input name="effort_A7" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A7"> Yes</td></tr>
+        <tr><td>A8</td><td><input name="impact_A8" type="number" min="1" max="5"></td><td><input name="effort_A8" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A8"> Yes</td></tr>
+        <tr><td>A9</td><td><input name="impact_A9" type="number" min="1" max="5"></td><td><input name="effort_A9" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A9"> Yes</td></tr>
+        <tr><td>A10</td><td><input name="impact_A10" type="number" min="1" max="5"></td><td><input name="effort_A10" type="number" min="1" max="5"></td><td><input type="checkbox" name="mom_A10"> Yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>3) Plot items on the matrix</h2>
+  <div class="card">
+    <div class="grid-wrap">
+      <div class="grid">
+        <div class="axis xlow">Effort Low</div>
+        <div class="axis xhigh">Effort High</div>
+        <div class="axis yhigh">Impact High</div>
+        <div class="axis ylow" style="bottom:auto; top:calc(100% - 24px);">Impact Low</div>
+      </div>
+    </div>
+    <p class="small">Sketch IDs (A1–A10) into the quadrants after scoring.</p>
+    <div class="legend">
+      <span>Quick Wins</span><span>Major Projects</span><span>Fill-ins</span><span>Avoid/Defer</span>
+    </div>
+  </div>
+
+  <h2>4) Select priorities</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th style="width:80px;">Priority</th><th style="width:60px;">ID</th><th style="width:120px;">Quadrant</th><th style="width:90px;">Impact</th><th style="width:90px;">Effort</th><th>One-line rationale</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>QW1</td>
+          <td><input name="qw1_id" placeholder="e.g., A3"></td>
+          <td><select name="qw1_quad"><option></option><option>Quick Wins</option><option>Major Projects</option><option>Fill-ins</option><option>Avoid/Defer</option></select></td>
+          <td><input name="qw1_imp" type="number" min="1" max="5"></td>
+          <td><input name="qw1_eff" type="number" min="1" max="5"></td>
+          <td><input name="qw1_reason"></td>
+        </tr>
+        <tr>
+          <td>QW2</td>
+          <td><input name="qw2_id"></td>
+          <td><select name="qw2_quad"><option></option><option>Quick Wins</option><option>Major Projects</option><option>Fill-ins</option><option>Avoid/Defer</option></select></td>
+          <td><input name="qw2_imp" type="number" min="1" max="5"></td>
+          <td><input name="qw2_eff" type="number" min="1" max="5"></td>
+          <td><input name="qw2_reason"></td>
+        </tr>
+        <tr>
+          <td>MP1</td>
+          <td><input name="mp1_id"></td>
+          <td><select name="mp1_quad"><option></option><option>Quick Wins</option><option>Major Projects</option><option>Fill-ins</option><option>Avoid/Defer</option></select></td>
+          <td><input name="mp1_imp" type="number" min="1" max="5"></td>
+          <td><input name="mp1_eff" type="number" min="1" max="5"></td>
+          <td><input name="mp1_reason"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>5) Action plan</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th style="width:60px;">ID</th><th>Owner role (not a person)</th><th>First milestone</th><th style="width:110px;">Target date</th><th>Risk/assumption</th><th>Fast test</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><input name="qw1_id2"></td>
+          <td><input name="qw1_owner"></td>
+          <td><input name="qw1_ms"></td>
+          <td><input name="qw1_date" type="date"></td>
+          <td><input name="qw1_risk"></td>
+          <td><input name="qw1_test"></td>
+        </tr>
+        <tr>
+          <td><input name="qw2_id2"></td>
+          <td><input name="qw2_owner"></td>
+          <td><input name="qw2_ms"></td>
+          <td><input name="qw2_date" type="date"></td>
+          <td><input name="qw2_risk"></td>
+          <td><input name="qw2_test"></td>
+        </tr>
+        <tr>
+          <td><input name="mp1_id2"></td>
+          <td><input name="mp1_owner"></td>
+          <td><input name="mp1_ms"></td>
+          <td><input name="mp1_date" type="date"></td>
+          <td><input name="mp1_risk"></td>
+          <td><input name="mp1_test"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>6) Quality check</h2>
+    <label><input type="checkbox" name="qc_outcome"> Verb-first, outcome-focused</label><br>
+    <label><input type="checkbox" name="qc_toolkit"> Scores use toolkit p.5 criteria</label><br>
+    <label><input type="checkbox" name="qc_qw"> Quick Wins have a 30–60 day milestone</label><br>
+    <label><input type="checkbox" name="qc_mp"> Major Project has clear prep step</label><br>
+    <label><input type="checkbox" name="qc_align"> Aligned to 12–24 month vision and pathway</label>
+  </div>
+
+  <p class="small">Guidance: Impact = contribution to outcomes for people/partners; Effort = time, cost, coordination, risk. Choose two Quick Wins and one Major Project.</p>
+  <div class="no-print" style="text-align:right; margin-top:12px;">
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</body>
+</html>
